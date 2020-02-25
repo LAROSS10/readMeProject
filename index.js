@@ -58,17 +58,22 @@ const axios = require('axios');
       let contribution = info.contribution;
       let linkedinUserName = info.linkedin
      
-
+ 
 
       const queryUrl = `https://api.github.com/users/${gitHubUserName}?client_id=115d68ff1497acbd665d&client_secret=aa009bdc3302e0edf821d60cd61be28008578e73`;
       axios.get(queryUrl).then(function(resp){  
        let email = resp.data.email
-      //  let badge = [![Generic badge](https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+       let badge = `[![license](https://img.shields.io/badge/license-${license}-Blue.svg)](https://shields.io/licenses/${license})`
+       let avatar = resp.data.avatar_url;
        
-        let markDown = `# Your Project Title:\n ${title} + \n ## Description: \n\n ${description}  \n\n\n\n\n   ## Table of Contents: \n    *Installation \n    *Usage \n    *License \n    *Contribution \n\n## Installation: \n\n## Usage: \n\n## License: \n\n## Contribution \n\n## LinkedIn URL: \n\n\n\n##Email Address: \n ${email} \n## Badge:`
+        let markDown = ` ${avatar} \n# Your Project Title:\n ${title}  \n# Description: \n\n ${description}  \n\n\n\n\n## Table of Contents: \n    *Installation \n    *Usage \n    *License \n    *Contribution \n\n## Installation: \n\n## Usage: \n${usage}  \n\n## License: \n${license} \n\n## Contribution: \n ${contribution} \n\n\n## LinkedIn URL: \n  ${linkedinUserName} \n\n\n\n## Email Address: \n ${email} \n## Badge: ${badge}`
 
         fs.writeFile("mynewReadme.md",markDown, function(err){
-
+          if (err) {
+            console.log(error);}
+            else {
+              console.log("write operation complete")
+          }
         })
       })
 
