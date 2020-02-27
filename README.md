@@ -16,7 +16,9 @@ mynewReadme
 
 # Link to GIF Demonstration
 
-<iframe src="https://drive.google.com/file/d/1DI9Mv-Ms8QXUh2aKLVDds_T_MrbMC6VE/preview" width="640" height="480"></iframe>
+https://drive.google.com/file/d/1DI9Mv-Ms8QXUh2aKLVDds_T_MrbMC6VE/view?usp=sharing
+
+
 
 # Screenshots of final project
 ![image](https://user-images.githubusercontent.com/57839089/75410406-74484280-58e1-11ea-8cf4-8d77a2cda791.png)
