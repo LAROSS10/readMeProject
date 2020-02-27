@@ -1,9 +1,11 @@
- https://avatars1.githubusercontent.com/u/57839089?v=4 
-# Your Project Title:
- TTT  
+ ![avatar](https://avatars1.githubusercontent.com/u/57839089?v=4 "avatar") 
+
+# *Your Project Title:*
+ My New Markdown Readme File  
+
 # Description: 
 
- TTT  
+ This is a markdown file that has been created using node.js with some npm packages installed as well.  
 
 
 
@@ -17,20 +19,21 @@
 ## Installation: 
 
 ## Usage: 
-TTTT  
+This is installed via the terminal.  
 
 ## License: 
 MIT 
 
 ## Contribution: 
- TTT 
+ Currently the only contributor is Lori Ross to contribute please clone this repository on GitHub and make a pull request 
 
 
 ## LinkedIn URL: 
-  TTT 
+  laross70@gmail.com 
 
 
 
 ## Email Address: 
  laross70@gmail.com 
-## Badge: [![license](https://img.shields.io/badge/license-MIT-Blue.svg)](https://shields.io/licenses/MIT)
+
+## Badge: ![license](https://img.shields.io/badge/license-MIT-Blue.svg)
